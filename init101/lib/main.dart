@@ -11,15 +11,14 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.teal[300],
       ),
-      body: Center(
-        child: Text(
-          'Welcome to init101 App!!',
-          style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.grey[600],
-              fontFamily: 'Lato'),
-        ),
+      body: Row(
+        children: <Widget>[
+          Text('Hello World'),
+          RaisedButton(
+            child: Text("Click me"),
+            onPressed: () {},
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('Click'),
